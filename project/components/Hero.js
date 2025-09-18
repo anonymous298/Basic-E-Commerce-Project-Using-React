@@ -9,24 +9,24 @@ const Hero = () => {
             <div>Don't miss our holiday offer - up to <span>50% OFF!</span></div>
         </div> */}
 
-            <div className="hero w-full h-[140vh] pt-15 flex justify-end max-w-[1920px] mx-auto relative">
-                <div id="lefthero" className=' w-[35%] flex flex-col gap-12 absolute top-1/2 left-15 -translate-y-1/2'>
-                    <h1 className='text-black font-mono text-7xl font-extrabold'>Brand New Collection</h1>
+            <div className="hero min-h-[120vh] max-sm:min-h-[90vh] pt-15 flex justify-end max-md:justify-center max-w-[1920px] mx-auto relative">
+                <div id="lefthero" className=' max-sm:pt-20 w-[35%] max-lg:w-[45%] max-md:w-[60%] max-sm:w-[90%] flex flex-col gap-12 absolute top-1/2 max-md:left-8 left-15 -translate-y-1/2 z-10'>
+                    <h1 className='text-black font-mono text-7xl font-extrabold max-lg:text-6xl max-md:text-5xl'>Brand New Collection</h1>
 
                     <p className='font-semibold text-[#333333]'>Mauris vitae ultricies leo integer malesuada tempor orci dapibus ultrices diam in arcu cursus euismod purus viverra accumsan.</p>
 
                     <div className='flex justify-between'>
-                        <li className='flex gap-2'>
+                        <li className='flex gap-2 items-center textce   '>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" className='bg-[#333333] rounded-full' viewBox="0 0 256 256"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path></svg>
                             <span className='font-semibold'>Top Brands</span>
                         </li>
 
-                        <li className='flex gap-2'>
+                        <li className='flex gap-2 items-center textce   '>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" className='bg-[#333333] rounded-full' viewBox="0 0 256 256"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path></svg>
                             <span className='font-semibold'>High Quality</span>
                         </li>
 
-                        <li className='flex gap-2'>
+                        <li className='flex gap-2 items-center textce   '>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" className='bg-[#333333] rounded-full' viewBox="0 0 256 256"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path></svg>
                             <span className='font-semibold'>Free Delivery</span>
                         </li>
@@ -35,13 +35,13 @@ const Hero = () => {
                     <button className='self-start text-lg bg-[#e33a3f] py-4 px-10 text-white font-bold border-none cursor-pointer hover:bg-[#980207]'>Explore Shop</button>
                 </div>
 
-                <div id="righthero" className=' w-[55%] relative'>
+                <div id="righthero" className=' w-[55%] relative z-0 '>
                     <Image src={'/home-hero-bg.png'} fill={true} alt='img' />
                 </div>
             </div>
 
             <div className='w-full bg-black p-20'>
-                <div className='w-[90%] mx-auto flex justify-between items-center'>
+                <div className='w-full mx-auto flex justify-between items-center max-w-[1920px] max-md:flex-col gap-y-10'>
                     <div className='flex flex-col items-center justify-center'>
                         <svg className="ugb-custom-icon" xmlns="http://www.w3.org/2000/svg" fill='#fff' viewBox="0 0 55 55" aria-hidden="true" width="48" height="48"><path d="M22.8 33.9H6c-1.4 0-2.5-1.2-2.5-2.6V14h43.3v7.6c0 .9.8 1.7 1.7 1.7 1 0 1.8-.7 1.8-1.7v-12c0-3.3-2.7-6.1-6-6.1H6c-3.3 0-6 2.8-6 6.1v21.7c0 3.3 2.7 6.1 6 6.1H22.9c1 0 1.7-.8 1.7-1.8s-.8-1.7-1.8-1.7zM6 7h38.3c1.4 0 2.5 1.2 2.5 2.6v.9H3.5v-.9C3.5 8.2 4.6 7 6 7zm.6 16c0-1 .8-1.8 1.8-1.8h4.7c1 0 1.8.7 1.8 1.7s-.7 1.8-1.7 1.8H8.4c-1 .1-1.8-.7-1.8-1.7zm0 5.9c0-1 .8-1.8 1.8-1.8h9.4c1 0 1.7.8 1.7 1.8 0 .9-.8 1.7-1.7 1.7H8.4c-1 0-1.8-.8-1.8-1.7zm34.9-4.3c-7.4 0-13.5 6-13.5 13.5 0 7.4 6 13.5 13.5 13.5C49 51.5 55 45.5 55 38c0-7.4-6-13.4-13.5-13.4zm0 24C35.7 48.6 31 43.8 31 38s4.7-10.5 10.5-10.5S52.1 32.2 52.1 38s-4.8 10.6-10.6 10.6zm5.2-14c.6.6.6 1.5 0 2.1l-5.5 5.5c-.3.3-.7.4-1 .4-.4 0-.8-.1-1-.4l-2.8-2.8c-.6-.6-.6-1.5 0-2.1.6-.6 1.5-.6 2.1 0l1.8 1.8 4.4-4.4c.5-.7 1.4-.7 2-.1z"></path></svg>
                         <h4 className='text-white font-bold text-lg mt-5'>Secure Payment</h4>
